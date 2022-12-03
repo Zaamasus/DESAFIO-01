@@ -1,165 +1,124 @@
-
-/* RESETS */
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
-
-li{ 
-
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-}
-
-
-:root{
-    --base-color: #302F3D;
-   --box-shadow:2px 2px 2px 1px #00000033;
-}
-
-/* BASE */
 
 body{
-    font-family: 'Merriweather Sans', sans-serif;
-    background: #22212C;
+    font-family: var(--title-font);
+    background: var(--body-color);
+    box-sizing: border-box;
+
 }
 
-.title{
-    font-family: 'Merriweather Sans', sans-serif;
-    color: #837E9F;
-    font-weight:700;
-    font-size: 1.438rem;
-    line-height: 1.813rem;
-    text-align: center;
-}
+/* ==VARIABLES== */
 
-.subtitle{
-    font-family: 'Merriweather Sans', sans-serif;
-    text-align: center;
-    color: #837E9F;
-    font-weight: 300;
-    font-size: .813rem ;
-    line-height: 1rem
+:root{
+
+    /*== CORES== */
+    --base-color: #302F3D;
+    --body-color: #22212C;
+    --text-color: #837E9F;
+    --box-color :2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     
+    /*== FONTS== */
+    
+    --title-font: 'Merriweather Sans', sans-serif;
+
 }
 
+/* ==RESETS== */
 
-/* CONTENDER_01 */
+.title{ 
 
+   font-size: 1.438rem;
+   color: var(--text-color);
+   font-weight: 700;
+   line-height: 1.813rem;
+}
+.subtitle{
+    font-size: 0.813rem;
+    color: var(--text-color);
+}
+.container{
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-top: 3.125rem;
+    justify-content:center;
+    width: 90%;
+    background-color: var(--base-color);
+
+    padding-top: 2rem;
+    padding-bottom: 3.063rem;
+    
+    border-radius: 1.25rem ;
+}
+.grid{
+    
+    margin-left: 2.5rem;
+ 
+}
+
+li{
+    list-style: none
+}
 
 
 
 /* PROFILE */
 
-.profile{
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 2.5rem ;
-    padding: 2rem;
-    border-radius: 1.5rem;
-    height: 18.25rem;
-    width: 80%;
-    background: var(--base-color);
-    box-shadow: var(--box-shadow);  
-    
+#header{
 
+   
 
 }
 
-.perfil img {
-    
-    margin: auto;
+.logo img{
     display: block;
+    margin: auto;
     width: 8rem;
-    height: 100%;
-
     border-radius: 50%;
-    border: 2px solid #00FF00;
+    border: 2px solid var(--text-color);
+    box-shadow: var(--box-color);
+    object-fit: cover;
+    margin-bottom: 1.813rem;
+    transition: .3s;
 
 }
+.logo img:hover{
 
-.apresents h1{
-    margin-bottom: .688rem ;
-
-    margin-top: 1.813rem;
+    width: 15rem;
 }
-.apresents h2{
-    font-family: 'Merriweather Sans', sans-serif;
-    font-weight: 300;
+.text{
+    text-align: center;
 }
 
-/* LINKS */
-
-.links{
-    
-    
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 2.5rem ;
-    padding: 2rem;
-    background: var(--base-color);
-    width: 80%;
-    border-radius: 1.25rem;
-    box-shadow: var(--box-shadow);
-
-}
-
-.links ul {
-  
-
-  
-   
-}
-
-.links ul li {
-    position: relative;
-    display: flex;
-    align-items: center;
-    
-    ;
-  
- 
-   
-}
-
-
-
-.links ul li img{
-   
-    margin-bottom: 1.25rem;
-    
-
-}
-
-.links ul li h2{
-    font-weight: 400;
-    margin-left: 1.25rem;
-    margin-bottom: 1.25rem;
-    line-height:1.021rem;
-    font-style: normal;
-
-}
-.toggle.icon-github {
-    color: red;
-    font-size: 1.5rem;
+.text h1{
     cursor: pointer;
-  }
+    margin-bottom: 0.688rem;
+    transition: .3s;
+}
+.text h1:hover{
 
-  .projects{
-    
-    background: var(--base-color);
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 2.5rem ;
-    padding: 2rem;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    box-shadow: var(--box-shadow);
-    border-radius: 1.25rem;
+    font-size: 1.800rem;
+}
 
-  }
+.text p{
+font-weight: 300;
+font-style:normal;
+cursor: pointer;
+transition: .3s;
+
+}
+
+.text p:hover{
+    font-size: 1rem;
+
+}
+
+/* ==LINKS== */
+
+
+
