@@ -222,3 +222,54 @@ margin-bottom: 1 rem;
 .esperiencia ul li p strong{
 font-size: 0.875rem;
 }
+@media (min-width:1200px){
+ 
+    .container{
+    margin-left: 1rem;
+  
+    margin-top: 1rem;
+
+    width: 40%;
+    background-color: var(--base-color);
+
+    padding-top: 2rem;
+    padding-bottom: 3.063rem;
+
+    border-radius: 1.25rem;
+
+    box-shadow: var(--box-color);
+    }
+
+    .links {
+        position: relative;
+    }
+    .myprojcts{
+
+        position: absolute;
+        top: 0;
+        width: 43rem;
+        right: 1.800rem;
+      justify-content: space-around;
+
+    }
+    .display-pc{
+        display: flex;
+    }
+
+    .tecnologia{
+        position: relative;
+    }
+
+    .experiences{
+        position: absolute;
+        top: 8rem;
+        right: 24.6rem;
+        width: 20rem;
+    }
+    .my-onix{
+        position: absolute;
+        top: 8rem;
+        right: 1.9rem;
+        width: 20rem;
+    }
+}
